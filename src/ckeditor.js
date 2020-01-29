@@ -28,6 +28,9 @@ import Paragraph from '@ckeditor/ckeditor5-paragraph/src/paragraph';
 import PasteFromOffice from '@ckeditor/ckeditor5-paste-from-office/src/pastefromoffice';
 import Table from '@ckeditor/ckeditor5-table/src/table';
 import TableToolbar from '@ckeditor/ckeditor5-table/src/tabletoolbar';
+import ImageResize from '@ckeditor/ckeditor5-image/src/imageresize';
+import Alignment from '@ckeditor/ckeditor5-alignment/src/alignment';
+import Font from '@ckeditor/ckeditor5-font/src/font';
 
 export default class ClassicEditor extends ClassicEditorBase {}
 
@@ -47,6 +50,7 @@ ClassicEditor.builtinPlugins = [
 	ImageStyle,
 	ImageToolbar,
 	ImageUpload,
+	ImageResize,
 	Indent,
 	Link,
 	List,
@@ -54,7 +58,9 @@ ClassicEditor.builtinPlugins = [
 	Paragraph,
 	PasteFromOffice,
 	Table,
-	TableToolbar
+	TableToolbar,
+	Alignment,
+	Font
 ];
 
 // Editor configuration.
@@ -65,6 +71,9 @@ ClassicEditor.defaultConfig = {
 			'|',
 			'bold',
 			'italic',
+			'alignment',
+			'fontColor',
+			'fontBackgroundColor',
 			'link',
 			'bulletedList',
 			'numberedList',
