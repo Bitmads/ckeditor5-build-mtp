@@ -1,6 +1,6 @@
 {
   "name": "@ckeditor/ckeditor5-build-mtp",
-  "version": "12.4.0",
+  "version": "1.1.0",
   "description": "CKEditor 5 custom build for mtp.travel",
   "keywords": [
     "ckeditor5-build",
@@ -92,5 +92,8 @@
   },
   "dependencies": {
     "yarn": "^1.21.0"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   }
 }
